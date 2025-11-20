@@ -1,92 +1,123 @@
-# 📘 생성형 AI with LLM (오픈소스 중심) 교육 과정  
+## 📅 Day 1 — LLM 기초 및 환경 설정 (5시간)
+### 1. Google Colab 실습 환경 설정
 
-**환경:**Google Colab 기반  
+GPU 활용 설정
 
----
+필수 패키지 설치
 
-## Day 1. LLM 기초 및 환경 설정 (3시간)
+노트북 구조 및 워크플로우 소개
 
-### 📌 학습 목표
-- LLM의 기본 개념을 이해하고, 로컬 및 클라우드 기반 실행 환경을 구축한다.
-- 다양한 LLM 서비스 API(OpenAI, Anthropic 등)를 활용해 기본적인 텍스트 생성 실습을 수행한다.
+### 2. 로컬 LLM 설치 및 구동
 
-### 📚 교육 내용
-- Google Colab 실습 환경 설정  
-- 로컬 LLM 설치 및 구동  
-- Transformer 기본 개념 이해  
-- 주요 LLM 성능 비교  
-  - **Vellum LLM Leaderboard** 활용  
-- 실습:  
-  - OpenAI API 호출  
-  - Anthropic API 호출  
+Hugging Face 모델 다운로드
 
----
+GGUF 기반 LLM 로컬 실행
 
-## Day 2. LangChain 프레임워크로 오픈소스 LLM 활용 ① (3시간)
+Text Generation WebUI 또는 llamacpp 활용
 
-### 📌 학습 목표
-- LangChain의 핵심 구성 요소를 이해하고 오픈소스 LLM과의 연동 방법을 익힌다.
+### 3. Transformer 기본 개념 이해
 
-### 📚 교육 내용
-- LangChain 개요 및 실무 활용 사례  
-- PromptTemplate, Chain, Memory 등 핵심 컴포넌트 이해  
-- 다양한 모델 연동  
-  - OpenAI  
-  - Claude  
-  - Gemini  
-  - Llama 등  
+Transformer 구조 소개
 
----
+Attention 메커니즘 이해
 
-## Day 3. LangChain 프레임워크로 오픈소스 LLM 활용 ② (3시간)
+LLM 학습 및 추론 흐름
 
-### 📌 학습 목표
-- RAG(검색 기반 생성) 파이프라인 구현을 통해 프라이빗 AI 챗봇을 구축한다.
+### 4. 주요 LLM 성능 비교
 
-### 📚 교육 내용
-- RAG(Retrieval-Augmented Generation) 개념 및 필요성  
-- 벡터 데이터베이스 활용  
-  - ChromaDB  
-  - Pinecone  
-- 임베딩 모델 선택 및 최적화 전략  
-- **실습: 프라이빗 AI 챗봇 구축**
+Vellum LLM Leaderboard 분석
 
----
+모델별 특성(속도·성능·토큰 비용 등) 비교
 
-## Day 4. LLM 모델 평가 (3시간)
+### 5. 실습: OpenAI / Anthropic API 사용
 
-### 📌 학습 목표
-- LLM 및 RAG 애플리케이션 성능을 평가하고 개선 방향을 설정한다.
+OpenAI GPT 계열 연결
 
-### 📚 교육 내용
-- LangSmith를 활용한 평가  
-- RAGAs 기반 RAG 품질 평가  
-- 주요 평가 지표 분석  
-- 성능 향상을 위한 전략  
-  - 프롬프트 튜닝  
-  - 데이터 전처리  
-  - 모델 파인튜닝 전략  
+Claude API 활용
 
----
+간단한 챗봇 프롬프트 실습
 
-## Day 5. LangGraph로 만드는 AI Agent (3시간)
+## 📘 LangChain 프레임워크로 오픈소스 LLM 활용 1 (5시간 중 2.5시간)
+### 1. LangChain 개요 및 활용 사례
 
-### 📌 학습 목표
-- LangGraph를 활용해 멀티스텝 작업을 수행하는 AI Agent를 설계하고 구현한다.
+왜 LangChain인가?
 
-### 📚 교육 내용
-- LangGraph 개요 및 주요 기능  
-- 멀티스텝 에이전트 설계  
-- **실습: Q&A AI Agent 애플리케이션 구축**
+AI 에이전트, RAG, 워크플로우 자동화 사례 소개
 
----
+### 2. 핵심 컴포넌트 이해
 
-## 📁 제공 문서 및 실습 자료
-- Google Colab Notebook 템플릿  
-- LangChain 실습 코드  
-- RAG 파이프라인 샘플  
-- LangGraph Agent 예제  
+PromptTemplate
 
----
+Chain
 
-필요하시면 **슬라이드용 버전**, **수강생 안내문**, **홍보용 요약본**도 제작해드릴게요!
+Memory
+
+Output parser
+
+### 3. 다양한 모델 연동 실습
+
+OpenAI
+
+Claude
+
+Google Gemini
+
+Meta Llama (HF Hub)
+
+## 📅 Day 2 — LangChain + RAG 심화 (5시간)
+### 1. RAG (Retrieval-Augmented Generation) 개념
+
+RAG 필요성 및 구조
+
+Retrieval 단계별 기술 요소 이해
+
+### 2. 벡터 DB 활용 (ChromaDB, Pinecone)
+
+임베딩 생성
+
+컬렉션 구성
+
+문서 검색 및 쿼리 분석
+
+### 3. 임베딩 모델 선택 및 최적화
+
+OpenAI / Instructor / BGE / E5 임베딩 비교
+
+Chunking 전략
+
+검색 성능 개선 방법
+
+### 4. 실습: 프라이빗 AI 챗봇 구축
+
+사내 문서를 기반으로 RAG 시스템 구축
+
+LLM 연결 + 검증
+
+Colab 기반 미니 웹앱 구성(Optional)
+
+## 📅 Day 3 — 평가 & Agent 실전 구축 (5시간)
+## 1. LLM 모델 평가 (3시간)
+### LangSmith / RAGAs 기반 평가
+
+LLM 애플리케이션 평가 개념
+
+LangSmith 프로젝트 구성
+
+RAGAs 평가 지표(Recall, MRR, Faithfulness 등)
+
+평가 결과 기반 개선 전략
+
+## 2. LangGraph로 만드는 AI Agent (3시간)
+### 1. LangGraph 개요
+
+LangChain + 상태 기계 기반 프레임워크
+
+그래프 기반 워크플로우 설계 원리
+
+### 2. 멀티스텝 AI Agent 설계
+
+노드(Node)와 엣지(Edge) 구성
+
+Tool 사용
+
+루프·조건 분기 구조 만들기
