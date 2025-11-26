@@ -27,17 +27,6 @@ C:\chatbot-project> venv\Scripts\activate
 OPENAI_API_KEY=sk-proj-RkvAo***
 
 
-(venv) C:\chatbot-project> stream run memory.py
-
-
-
-
-
-
-
-
-
-
-
 # Streamlit을 사용하여 Python 파일을 실행하는 명령어
-(venv) C:\chatbot-project>streamlit run c:/Lecture/memory.py
+
+(venv) C:\chatbot-project>streamlit run  memory.py
