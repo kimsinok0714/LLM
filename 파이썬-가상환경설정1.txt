@@ -32,6 +32,7 @@ OPENAI_API_KEY=sk-proj-RkvAo***
 
 
 # Streamlit을 사용하여 Python 파일을 실행하는 명령어
-(venv) C:\ragChatbot-project> stream run rag_chatbot.py
+(venv) C:\ragChatbot-project> streamlit run rag_chatbot.py
+
 
 
