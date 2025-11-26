@@ -5,6 +5,8 @@ Python Releases for Windows Python 3.11.9
 https://code.visualstudio.com/download   
 Windows x64
 
+# 가상환경을 처음 구성했을 때 pip 업그레이드
+python -m pip install --upgrade pip
 
 2. C:\ragchatbot-project 디렉토리 생성
 
@@ -18,7 +20,7 @@ C:\ragchatbot-project> python -m venv venv
 C:\ragchatbot-project> venv\Scripts\activate
 
 5. 가상환경에서 패키지 설치
-(venv) C:\ragchatbot-project> pip install langchain-core==0.2.41 langchain==0.2.16 langchain-openai==0.1.23
+(venv) C:\ragchatbot-project> pip install langchain-core==0.2.41 langchain==0.2.16 langchain-openai==0.1.23 langchain-community langchain-text-splitters
 (venv) C:\ragchatbot-project> pip install langchain-openai>=0.2.0
 (venv) C:\ragchatbot-project> pip install pypdf
 (venv) C:\ragchatbot-project> pip install faiss-cpu
@@ -31,4 +33,5 @@ OPENAI_API_KEY=sk-proj-RkvAo***
 
 # Streamlit을 사용하여 Python 파일을 실행하는 명령어
 (venv) C:\ragChatbot-project> stream run rag_chatbot.py
+
 
